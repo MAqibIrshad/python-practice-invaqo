@@ -42,7 +42,7 @@ new_df_2 = pd.DataFrame(
 
 print(new_df_2.head(10))
 
-agg_3 = new_df_2.groupby("Employee").agg({
+agg_3 = new_df_2.groupby("Department").agg({
     "Revenue": "sum",
     "Expense": "mean"
 })
